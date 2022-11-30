@@ -47,10 +47,10 @@ struct ContentView: View {
     }
     
     private func stopActivity() {
-        let state = FootballMatch.ContentState(score1: 0, score2: 0, information: "Somsak got hat-trick!!")
+        let state = FootballMatch.ContentState(score1: 4, score2: 3, information: "Somsak got hat-trick!!")
         
         Task {
-            await currentActivity?.end(using: state, dismissalPolicy: .default)
+            await currentActivity?.end(using: state, dismissalPolicy: .after(Date.now.addingTimeInterval(5)))
         }
     }
 }

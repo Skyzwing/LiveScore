@@ -65,8 +65,8 @@ struct LiveScoreWidgetLiveActivity: Widget {
                 }
             } compactTrailing: {
                 HStack {
-                    Text(context.attributes.shortNameSecondTeam)
                     Text(context.state.score2.description)
+                    Text(context.attributes.shortNameSecondTeam)
                 }
             } minimal: {
                 Image(systemName: "sportscourt.circle")
