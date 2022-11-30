@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4DAF6C2934BD48000EE470 /* LiveScoreWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606242292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift */; };
+		FB606210292F76C200C5C292 /* LiveScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60620F292F76C200C5C292 /* LiveScoreApp.swift */; };
+		FB606212292F76C200C5C292 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606211292F76C200C5C292 /* ContentView.swift */; };
+		FB606214292F76C300C5C292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB606213292F76C300C5C292 /* Assets.xcassets */; };
+		FB606217292F76C300C5C292 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB606216292F76C300C5C292 /* Preview Assets.xcassets */; };
+		FB60623D292F7F3B00C5C292 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB606223292F79A200C5C292 /* WidgetKit.framework */; };
+		FB60623E292F7F3B00C5C292 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB606225292F79A200C5C292 /* SwiftUI.framework */; };
+		FB606241292F7F3B00C5C292 /* LiveScoreWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606240292F7F3B00C5C292 /* LiveScoreWidgetBundle.swift */; };
+		FB606243292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606242292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift */; };
+		FB606245292F7F3B00C5C292 /* LiveScoreWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606244292F7F3B00C5C292 /* LiveScoreWidget.swift */; };
+		FB606247292F7F3C00C5C292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB606246292F7F3C00C5C292 /* Assets.xcassets */; };
+		FB60624B292F7F3C00C5C292 /* LiveScoreWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB60623C292F7F3B00C5C292 /* LiveScoreWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB606249292F7F3C00C5C292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB606204292F76C200C5C292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB60623B292F7F3B00C5C292;
+			remoteInfo = LiveScoreWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB606237292F79A300C5C292 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB60624B292F7F3C00C5C292 /* LiveScoreWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB60620C292F76C200C5C292 /* LiveScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB60620F292F76C200C5C292 /* LiveScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreApp.swift; sourceTree = "<group>"; };
+		FB606211292F76C200C5C292 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB606213292F76C300C5C292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB606216292F76C300C5C292 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB606223292F79A200C5C292 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FB606225292F79A200C5C292 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FB60623C292F7F3B00C5C292 /* LiveScoreWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveScoreWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB606240292F7F3B00C5C292 /* LiveScoreWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreWidgetBundle.swift; sourceTree = "<group>"; };
+		FB606242292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		FB606244292F7F3B00C5C292 /* LiveScoreWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreWidget.swift; sourceTree = "<group>"; };
+		FB606246292F7F3C00C5C292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB606248292F7F3C00C5C292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB606209292F76C200C5C292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB606239292F7F3B00C5C292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB60623E292F7F3B00C5C292 /* SwiftUI.framework in Frameworks */,
+				FB60623D292F7F3B00C5C292 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB606203292F76C200C5C292 = {
+			isa = PBXGroup;
+			children = (
+				FB60620E292F76C200C5C292 /* LiveScore */,
+				FB60623F292F7F3B00C5C292 /* LiveScoreWidget */,
+				FB606222292F79A200C5C292 /* Frameworks */,
+				FB60620D292F76C200C5C292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB60620D292F76C200C5C292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB60620C292F76C200C5C292 /* LiveScore.app */,
+				FB60623C292F7F3B00C5C292 /* LiveScoreWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB60620E292F76C200C5C292 /* LiveScore */ = {
+			isa = PBXGroup;
+			children = (
+				FB60620F292F76C200C5C292 /* LiveScoreApp.swift */,
+				FB606211292F76C200C5C292 /* ContentView.swift */,
+				FB606213292F76C300C5C292 /* Assets.xcassets */,
+				FB606215292F76C300C5C292 /* Preview Content */,
+			);
+			path = LiveScore;
+			sourceTree = "<group>";
+		};
+		FB606215292F76C300C5C292 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB606216292F76C300C5C292 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB606222292F79A200C5C292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB606223292F79A200C5C292 /* WidgetKit.framework */,
+				FB606225292F79A200C5C292 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB60623F292F7F3B00C5C292 /* LiveScoreWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FB606240292F7F3B00C5C292 /* LiveScoreWidgetBundle.swift */,
+				FB606242292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift */,
+				FB606244292F7F3B00C5C292 /* LiveScoreWidget.swift */,
+				FB606246292F7F3C00C5C292 /* Assets.xcassets */,
+				FB606248292F7F3C00C5C292 /* Info.plist */,
+			);
+			path = LiveScoreWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB60620B292F76C200C5C292 /* LiveScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB60621A292F76C300C5C292 /* Build configuration list for PBXNativeTarget "LiveScore" */;
+			buildPhases = (
+				FB606208292F76C200C5C292 /* Sources */,
+				FB606209292F76C200C5C292 /* Frameworks */,
+				FB60620A292F76C200C5C292 /* Resources */,
+				FB606237292F79A300C5C292 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB60624A292F7F3C00C5C292 /* PBXTargetDependency */,
+			);
+			name = LiveScore;
+			productName = LiveScore;
+			productReference = FB60620C292F76C200C5C292 /* LiveScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB60623B292F7F3B00C5C292 /* LiveScoreWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB60624C292F7F3C00C5C292 /* Build configuration list for PBXNativeTarget "LiveScoreWidgetExtension" */;
+			buildPhases = (
+				FB606238292F7F3B00C5C292 /* Sources */,
+				FB606239292F7F3B00C5C292 /* Frameworks */,
+				FB60623A292F7F3B00C5C292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveScoreWidgetExtension;
+			productName = LiveScoreWidgetExtension;
+			productReference = FB60623C292F7F3B00C5C292 /* LiveScoreWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB606204292F76C200C5C292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FB60620B292F76C200C5C292 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FB60623B292F7F3B00C5C292 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = FB606207292F76C200C5C292 /* Build configuration list for PBXProject "LiveScore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB606203292F76C200C5C292;
+			productRefGroup = FB60620D292F76C200C5C292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB60620B292F76C200C5C292 /* LiveScore */,
+				FB60623B292F7F3B00C5C292 /* LiveScoreWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB60620A292F76C200C5C292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB606217292F76C300C5C292 /* Preview Assets.xcassets in Resources */,
+				FB606214292F76C300C5C292 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60623A292F7F3B00C5C292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB606247292F7F3C00C5C292 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB606208292F76C200C5C292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB606212292F76C200C5C292 /* ContentView.swift in Sources */,
+				FB606210292F76C200C5C292 /* LiveScoreApp.swift in Sources */,
+				FB4DAF6C2934BD48000EE470 /* LiveScoreWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB606238292F7F3B00C5C292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB606245292F7F3B00C5C292 /* LiveScoreWidget.swift in Sources */,
+				FB606241292F7F3B00C5C292 /* LiveScoreWidgetBundle.swift in Sources */,
+				FB606243292F7F3B00C5C292 /* LiveScoreWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB60624A292F7F3C00C5C292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB60623B292F7F3B00C5C292 /* LiveScoreWidgetExtension */;
+			targetProxy = FB606249292F7F3C00C5C292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB606218292F76C300C5C292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB606219292F76C300C5C292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB60621B292F76C300C5C292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiveScore/Preview Content\"";
+				DEVELOPMENT_TEAM = PHK95RXFWX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surachet.app.LiveScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB60621C292F76C300C5C292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiveScore/Preview Content\"";
+				DEVELOPMENT_TEAM = PHK95RXFWX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surachet.app.LiveScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB60624D292F7F3C00C5C292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PHK95RXFWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveScoreWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveScoreWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surachet.app.LiveScore.LiveScoreWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB60624E292F7F3C00C5C292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PHK95RXFWX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveScoreWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveScoreWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surachet.app.LiveScore.LiveScoreWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB606207292F76C200C5C292 /* Build configuration list for PBXProject "LiveScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB606218292F76C300C5C292 /* Debug */,
+				FB606219292F76C300C5C292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB60621A292F76C300C5C292 /* Build configuration list for PBXNativeTarget "LiveScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60621B292F76C300C5C292 /* Debug */,
+				FB60621C292F76C300C5C292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB60624C292F7F3C00C5C292 /* Build configuration list for PBXNativeTarget "LiveScoreWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60624D292F7F3C00C5C292 /* Debug */,
+				FB60624E292F7F3C00C5C292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB606204292F76C200C5C292 /* Project object */;
+}
